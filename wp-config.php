@@ -16,16 +16,20 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'xciticvi_etv');
+
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'xciticvi_etv');
+
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', 'Sami6493');
+
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
+
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +46,22 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'kqm$?D%[@3brV,-kStbNs&l?v2:V;dG}teMPiMuVG(^~iqC[oEj{Sd`5i$x)0S`d');
+
+define('SECURE_AUTH_KEY',  '8pGx;f- kLBZiXOz>7h,:UoJ#M`*GhBQy+!(;h5Nib;i>WzoY!MC6Avok^>I21Xv');
+
+define('LOGGED_IN_KEY',    '~+;EG |)xp-TK IG(M0+E0a-9Y|8zqVt;Mx/|nXgX[sWz$sSZ2+v^dRzB?Q0EU|l');
+
+define('NONCE_KEY',        ']|7&nzv0@z]{R+QMPRk>I4iKZ+/$#KN|Xq/*sJ]zs[wOo[UTG5B[1YJ_A9DK>8|m');
+
+define('AUTH_SALT',        'Zl%{}UJ8c@ec6J;]w#3)$yf|p|2=V|:cPU+HZ(|AQn/*RR0qW{R|ry0RVZ2rQ.,;');
+
+define('SECURE_AUTH_SALT', 'jtHlu+h9db3?WeiP}!f3%`J9D$N#T$9s-O(-!Hj*v5|Ma=DR,fTe/;)j#KXu9`59');
+
+define('LOGGED_IN_SALT',   '%vGX4|FVV-:5/N`D6oD]$Gp`r$+Ay`c>Z+ L7|:_whRb%s1A0Rqh3Fjsq);ewe:u');
+
+define('NONCE_SALT',       '5~_OL+FP;iGMG{?6CjS[9kq>(IqvMJiFQObaTsj_24Ns{?L/?ll64+Kk4VR4dMI|');
+
 
 /**#@-*/
 
@@ -60,6 +72,7 @@ define('NONCE_SALT',       'put your unique phrase here');
  * prefix. Only numbers, letters, and underscores please!
  */
 $table_prefix  = 'wp_';
+
 
 /**
  * For developers: WordPress debugging mode.
@@ -72,6 +85,7 @@ define('WP_DEBUG', false);
 
 /* Multisite */
 define( 'WP_ALLOW_MULTISITE', true );
+
 
 /* That's all, stop editing! Happy blogging. */
 
