@@ -42,13 +42,13 @@ $pedadida_base = 'http://evotvo.com/';
 
 
 // Full Directory Link with trailing slash included
-$pedadida_directory = '/home8/xciticvi/public_html/etv/';
+$pedadida_directory = '/home8/xciticvi/public_html/evotvo/';
 
 // Base Site for Classroom
 $pedadida_classroom_base = $pedadida_base . 'class';
 
 // Now you need a place where Classroom can save uploaded files.
-$pedadida_classroom_data = '/home8/xciticvi/public_html/etv/class';
+$pedadida_classroom_data = '/home8/xciticvi/public_html/evotvo/class';
 
 // Base Site for Library
 $pedadida_library_base = $pedadida_base . 'library';
