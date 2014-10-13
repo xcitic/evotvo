@@ -5,3 +5,4 @@
 [13-Oct-2014 04:22:14 UTC] PHP Fatal error:  Cannot redeclare get_locale() (previously declared in /home8/xciticvi/public_html/evotvo/lab/application/functions.php:738) in /home8/xciticvi/public_html/evotvo/wp-includes/l10n.php on line 72
 [13-Oct-2014 04:22:43 UTC] PHP Fatal error:  Cannot redeclare get_locale() (previously declared in /home8/xciticvi/public_html/evotvo/lab/application/functions.php:738) in /home8/xciticvi/public_html/evotvo/wp-includes/l10n.php on line 72
 [13-Oct-2014 04:24:54 UTC] PHP Fatal error:  Cannot redeclare get_locale() (previously declared in /home8/xciticvi/public_html/evotvo/lab/application/functions.php:738) in /home8/xciticvi/public_html/evotvo/wp-includes/l10n.php on line 72
+[13-Oct-2014 04:39:59 UTC] PHP Fatal error:  Cannot redeclare get_locale() (previously declared in /home8/xciticvi/public_html/evotvo/lab/application/functions.php:738) in /home8/xciticvi/public_html/evotvo/wp-includes/l10n.php on line 72
