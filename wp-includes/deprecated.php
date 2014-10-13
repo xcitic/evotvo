@@ -1221,10 +1221,11 @@ function comments_rss() {
  * @param string $email The user's email (optional).
  * @return int The new user's ID.
  */
+if(!function_exists('create_user')){
 function create_user($username, $password, $email) {
 	_deprecated_function( __FUNCTION__, '2.0', 'wp_create_user()' );
 	return wp_create_user($username, $password, $email);
-}
+}}
 
 /**
  * Unused function.
