@@ -38,17 +38,17 @@ $pedadida_key8 = '5~_OL+FP;iGMG{?6CjS[9kq>(IqvMJiFQObaTsj_24Ns{?L/?ll64+Kk4VR4dM
 $mysql_bin_path = '/usr/bin';
 
 // Full Domain Link with trailing slash included
-$pedadida_base = 'http://pranashama.org';
+$pedadida_base = 'http://evotvo.com/';
 
 
 // Full Directory Link with trailing slash included
-$pedadida_directory = '/home/prana/public_html/';
+$pedadida_directory = '/home8/xciticvi/public_html/etv/';
 
 // Base Site for Classroom
 $pedadida_classroom_base = $pedadida_base . 'class';
 
 // Now you need a place where Classroom can save uploaded files.
-$pedadida_classroom_data = '/home/prana/classdata';
+$pedadida_classroom_data = '/home8/xciticvi/public_html/etv/class';
 
 // Base Site for Library
 $pedadida_library_base = $pedadida_base . 'library';
@@ -56,7 +56,7 @@ $pedadida_library_base = $pedadida_base . 'library';
 $pedadida_library_secure = 'false'; // Using SSL for Library?
 
 // Email Notification Address
-$pedadida_email_notify = 'info@pranashama.org';
+$pedadida_email_notify = 'info@evotvo.com';
 
 // Paths used in Library - Can be modified in Library Config to override these settings
 $pedadida_imagemagick_path = '/usr/bin'; 
@@ -75,7 +75,7 @@ $pedadida_language = 'en-US';
 $pedadida_library_name = 'Library';
 
 // Name of Your Pedadida Library
-$pedadida_lab_name = 'Prana Lab';
+$pedadida_lab_name = 'eTV Lab';
 
 // Base Site for Library
 $pedadida_lab_base = $pedadida_base . 'lab';
