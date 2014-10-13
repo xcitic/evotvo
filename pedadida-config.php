@@ -45,10 +45,10 @@ $pedadida_base = 'http://evotvo.com/';
 $pedadida_directory = '/home8/xciticvi/public_html/evotvo/';
 
 // Base Site for Classroom
-$pedadida_classroom_base = $pedadida_base . 'class';
+$pedadida_classroom_base = $pedadida_base . 'lab';
 
 // Now you need a place where Classroom can save uploaded files.
-$pedadida_classroom_data = '/home8/xciticvi/public_html/evotvo/class';
+$pedadida_classroom_data = '/home8/xciticvi/public_html/evotvo/lab';
 
 // Base Site for Library
 $pedadida_library_base = $pedadida_base . 'library';
@@ -77,7 +77,7 @@ $pedadida_library_name = 'Library';
 // Name of Your Pedadida Library
 $pedadida_lab_name = 'eTV Lab';
 
-// Base Site for Library
+// Base Site for Lab
 $pedadida_lab_base = $pedadida_base . 'lab';
 
 
