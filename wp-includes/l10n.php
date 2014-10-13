@@ -23,6 +23,7 @@
  *
  * @return string The locale of the blog or from the 'locale' hook.
  */
+ if(!function_exists('get_locale')){
 function get_locale() {
 	global $locale, $wp_local_package;
 
@@ -69,7 +70,7 @@ function get_locale() {
 
 	/** This filter is documented in wp-includes/l10n.php */
 	return apply_filters( 'locale', $locale );
-}
+}}
 
 /**
  * Retrieve the translation of $text.
