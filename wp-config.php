@@ -3,9 +3,9 @@
  * The base configurations of the WordPress.
  *
  * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, and ABSPATH. You can find more information by visiting
- * {@link http://codex.wordpress.org/Editing_wp-config.php Editing wp-config.php}
- * Codex page. You can get the MySQL settings from your web host.
+ * Secret Keys, WordPress Language, and ABSPATH. You can find more information
+ * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} Codex page. You can get the MySQL settings from your web host.
  *
  * This file is used by the wp-config.php creation script during the
  * installation. You don't have to use the web site, you can just copy this file
@@ -14,28 +14,25 @@
  * @package WordPress
  */
 
+require_once(__DIR__ . '/pedadida-config.php');
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'xciticvi_etv');
-
+define('DB_NAME', $pedadida_database_name);
 
 /** MySQL database username */
-define('DB_USER', 'xciticvi_etv');
-
+define('DB_USER', $pedadida_database_username);
 
 /** MySQL database password */
-define('DB_PASSWORD', 'Sami6493');
-
+define('DB_PASSWORD', $pedadida_database_password);
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
-
+define('DB_HOST', $pedadida_database_host);
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', $pedadida_database_charset);
 
 /** The Database Collate type. Don't change this if in doubt. */
-define('DB_COLLATE', '');
+define('DB_COLLATE', $pedadida_database_collate);
 
 /**#@+
  * Authentication Unique Keys and Salts.
@@ -46,22 +43,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'kqm$?D%[@3brV,-kStbNs&l?v2:V;dG}teMPiMuVG(^~iqC[oEj{Sd`5i$x)0S`d');
-
-define('SECURE_AUTH_KEY',  '8pGx;f- kLBZiXOz>7h,:UoJ#M`*GhBQy+!(;h5Nib;i>WzoY!MC6Avok^>I21Xv');
-
-define('LOGGED_IN_KEY',    '~+;EG |)xp-TK IG(M0+E0a-9Y|8zqVt;Mx/|nXgX[sWz$sSZ2+v^dRzB?Q0EU|l');
-
-define('NONCE_KEY',        ']|7&nzv0@z]{R+QMPRk>I4iKZ+/$#KN|Xq/*sJ]zs[wOo[UTG5B[1YJ_A9DK>8|m');
-
-define('AUTH_SALT',        'Zl%{}UJ8c@ec6J;]w#3)$yf|p|2=V|:cPU+HZ(|AQn/*RR0qW{R|ry0RVZ2rQ.,;');
-
-define('SECURE_AUTH_SALT', 'jtHlu+h9db3?WeiP}!f3%`J9D$N#T$9s-O(-!Hj*v5|Ma=DR,fTe/;)j#KXu9`59');
-
-define('LOGGED_IN_SALT',   '%vGX4|FVV-:5/N`D6oD]$Gp`r$+Ay`c>Z+ L7|:_whRb%s1A0Rqh3Fjsq);ewe:u');
-
-define('NONCE_SALT',       '5~_OL+FP;iGMG{?6CjS[9kq>(IqvMJiFQObaTsj_24Ns{?L/?ll64+Kk4VR4dMI|');
-
+define('AUTH_KEY',         $pedadida_key1);
+define('SECURE_AUTH_KEY',  $pedadida_key2);
+define('LOGGED_IN_KEY',    $pedadida_key3);
+define('NONCE_KEY',        $pedadida_key4);
+define('AUTH_SALT',        $pedadida_key5);
+define('SECURE_AUTH_SALT', $pedadida_key6);
+define('LOGGED_IN_SALT',   $pedadida_key7);
+define('NONCE_SALT',       $pedadida_key8);
 
 /**#@-*/
 
@@ -73,6 +62,19 @@ define('NONCE_SALT',       '5~_OL+FP;iGMG{?6CjS[9kq>(IqvMJiFQObaTsj_24Ns{?L/?ll6
  */
 $table_prefix  = 'wp_';
 
+/**
+ * WordPress Localized Language, defaults to English.
+ *
+ * Change this to localize WordPress. A corresponding MO file for the chosen
+ * language must be installed to wp-content/languages. For example, install
+ * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
+ * language support.
+ */
+define('WPLANG', '');
+
+
+// define('WP_HOME','http://evotvo.com');
+// define('WP_SITEURL','http://evotvo.com');
 
 /**
  * For developers: WordPress debugging mode.
@@ -82,16 +84,44 @@ $table_prefix  = 'wp_';
  * in their development environments.
  */
 define('WP_DEBUG', false);
+define('WP_ALLOW_MULTISITE', true);
+# Disables all core updates:
+define( 'WP_AUTO_UPDATE_CORE', false );
 
-/* Multisite */
-define( 'WP_ALLOW_MULTISITE', true );
+// DEBUG SETTINGS
+@ini_set('display_errors',0);
+define( 'WP_DEBUG_DISPLAY', false );
+@ini_set('log_errors','On');
+@ini_set('display_errors','Off');
+// @ini_set('error_log','/home/prana/public_html/wp_error_log');
+@ini_set( 'error_reporting', E_ERROR);
 
 define('MULTISITE', true);
 define('SUBDOMAIN_INSTALL', true);
+$base = '/';
+
 define('DOMAIN_CURRENT_SITE', 'evotvo.com');
 define('PATH_CURRENT_SITE', '/');
 define('SITE_ID_CURRENT_SITE', 1);
 define('BLOG_ID_CURRENT_SITE', 1);
+//define('FORCE_SSL_LOGIN ', true);
+
+define ( 'BP_GROUPS_SLUG', 'evotvo' );
+
+
+define('ADMIN_COOKIE_PATH', '/');
+//define('COOKIE_DOMAIN', '');
+define('COOKIEPATH', '');
+define('SITECOOKIEPATH', '');
+
+
+define('MASTER_DOMAIN', $pedadida_base ); // Change this to the domain name of your master site
+
+    // WP DOMAIN MAPPING
+	define( 'SUNRISE', 'on' );
+	
+	
+	define('WP_MEMORY_LIMIT', '256M');
 
 /* That's all, stop editing! Happy blogging. */
 
